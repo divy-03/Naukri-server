@@ -22,8 +22,8 @@ app.get("/", (req, res) => {
   res.json({ hello: "Hello World!" });
 });
 
-// const user = require("./routes/userRoute.js");
-// app.use("/api", user);
+const user = require("./routes/userRoute.js");
+app.use("/api", user);
 
 // const team = require("./routes/teamRoute.js");
 // app.use("/api", team);
