@@ -30,36 +30,6 @@ const userSchema = new Schema({
     public_id: String,
     url: String,
   },
-  position: {
-    type: String,
-    // enum: [
-    //   "LW",
-    //   "RW",
-    //   "CAM",
-    //   "ST",
-    //   "CF",
-    //   "CM",
-    //   "CDM",
-    //   "LM",
-    //   "RM",
-    //   "LB",
-    //   "RB",
-    //   "CB",
-    //   "LWB",
-    //   "RWB",
-    //   "GK",
-    // ],
-    default: "NAN",
-  },
-  // tid: {
-  //   type: Types.ObjectId,
-  //   ref: "Team"
-  // },
-  // batch: 2022, 21 etc;
-  rating: {
-    type: Number,
-    default: 1,
-  },
   resetPasswordToken: {
     type: String,
     default: undefined,

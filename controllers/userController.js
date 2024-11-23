@@ -64,7 +64,7 @@ exports.loginUser = catchAsync(async (req, res) => {
 });
 
 exports.logoutUser = catchAsync(async (req, res) => {
-  res.cookie("kToken", "", {
+  res.cookie("nToken", "", {
     expires: new Date(0),
     httpOnly: true,
     secure: process.env.NODE_ENV === "production",

@@ -3,7 +3,7 @@ const jwt = require("jsonwebtoken");
 const User = require("../models/userModel.js");
 
 exports.fetchUser = async (req, res, next) => {
-  const authToken = req.cookies.kToken;
+  const authToken = req.cookies.nToken;
   if (!authToken) {
     return resError(401, "Unauthorized", res);
   }

@@ -25,11 +25,6 @@ app.get("/", (req, res) => {
 const user = require("./routes/userRoute.js");
 app.use("/api", user);
 
-// const team = require("./routes/teamRoute.js");
-// app.use("/api", team);
-
-// const tourni = require("./routes/tourniRoute.js");
-// app.use("/api", tourni);
 
 app.use(errorMid);
 

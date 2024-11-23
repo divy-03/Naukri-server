@@ -23,7 +23,7 @@ module.exports = async (statusCode, user, res) => {
   };
 
   // Set the cookie
-  res.cookie("kToken", authToken, options);
+  res.cookie("nToken", authToken, options);
 
   // Return response with the token
   return res.status(statusCode).json({
